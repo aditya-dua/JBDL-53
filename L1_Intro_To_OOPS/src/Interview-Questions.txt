@@ -1,0 +1,7 @@
+1. What are the different ways to create object in Java?
+2. Why Java doesnot support Multiple inheritance?
+3. Is JVM paltform Independent?
+4. How is-A relation is different from has-a Relation?
+5. What is the difference between super() and super?
+6. What is the difference between this() and this?
+7. Difference between javac and java command?
