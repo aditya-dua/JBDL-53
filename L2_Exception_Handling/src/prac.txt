@@ -1,0 +1,2 @@
+Question:
+Create a person class and have age, name and email. In the setter of age, check if age is less than 18 and then throw an Exception age cannot be less than 18.
