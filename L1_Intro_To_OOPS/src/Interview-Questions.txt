@@ -5,3 +5,8 @@
 5. What is the difference between super() and super?
 6. What is the difference between this() and this?
 7. Difference between javac and java command?
+
+L2:
+1. What are functional interfaces and marker interface?
+2. Interface variables what are the keywords associated with and why?
+3. Have a simple progam to demostrate the Daimond problem?
