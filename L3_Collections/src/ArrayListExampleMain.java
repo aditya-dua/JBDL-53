@@ -16,13 +16,12 @@ public class ArrayListExampleMain {
 		arList.add(4);
 		
 		arList.remove(2);
+		
 		for(int i=0;i<arList.size();i++) {
 			System.out.println(arList.get(i));
 		}
 		
-		Integer iT=new Integer(4);
-		
-		arList.remove(iT);
+		arList.remove(Integer.valueOf(4));
 		
 		for(int i=0;i<arList.size();i++) {
 			System.out.println(arList.get(i));
@@ -42,6 +41,8 @@ public class ArrayListExampleMain {
 		strList.add("John");
 		strList.add("David");
 		strList.add("JAck");
+		
+		strList.remove("JAck");
 		
 		
 		System.out.println(strList);

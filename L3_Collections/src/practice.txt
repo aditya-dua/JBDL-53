@@ -1,0 +1,7 @@
+1. Create a student class with following
+	a. id
+	b. name
+	c. array [marks]
+	
+2. In your main class, create this student object, insert into an array list and then 
+iterate over the arraylist to print the total marks of the all the students.
