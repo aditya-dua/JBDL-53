@@ -26,9 +26,13 @@ public class StudentHMMain {
 		
 		for(int i=0;i<5;i++) {
 			
-			stu=new Student(i+1,names[i]);
+			stu=new Student(i+1,names[0]);
 			
 			percentHM.put(stu, i+20 );
+			
+			stu=new Student(i+1,names[0]);
+			
+			percentHM.put(stu, i+30 );
 		}
 		
 		for (Student temp : percentHM.keySet()) {
