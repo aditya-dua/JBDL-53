@@ -29,17 +29,27 @@ public class Student {
 		return Objects.hash(id, name);
 	}
 
+	/**
+	 * Contract:
+	 * Two objects can have the same hashcode but are not equal
+	 * If two objects are equal they should have the same hashcode
+	 * 
+	 */
 	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
+		/*if (this == obj)
+			return true;*/
 		if (obj == null)
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
 		Student other = (Student) obj;
-		return id == other.id && Objects.equals(name, other.name);
+		return id == other.id;
 	}
+	
+	
+
+	
 	
 	
 	
