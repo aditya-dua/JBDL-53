@@ -16,3 +16,4 @@ L4:
 2. What is a daemon thread
 3. Difference between sleep and yield
 4. 5 methods of the thread class
+5. Difference between Sleep and Wait method?

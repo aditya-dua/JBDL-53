@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -14,6 +15,8 @@ public class ArrayListExampleMain {
 		arList.add(2);
 		arList.add(3);
 		arList.add(4);
+		
+		Collections.sort(arList);
 		
 		arList.remove(2);
 		
