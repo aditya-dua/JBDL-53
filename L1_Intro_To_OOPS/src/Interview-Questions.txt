@@ -10,3 +10,9 @@ L2:
 1. What are functional interfaces and marker interface?
 2. Interface variables what are the keywords associated with and why?
 3. Have a simple progam to demostrate the Daimond problem?
+
+L4:
+1. Can  run method be directly called?
+2. What is a daemon thread
+3. Difference between sleep and yield
+4. 5 methods of the thread class
