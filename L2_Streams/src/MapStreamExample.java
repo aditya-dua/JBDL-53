@@ -10,6 +10,7 @@ public class MapStreamExample {
 		
 		List<Integer> arr = Arrays.asList(3,5,1,6,8,9,2);
 		
+		
 		List<Integer> square = arr.stream().map(x->x*x).sorted()
 				.collect(Collectors.toList());
 		
@@ -25,6 +26,10 @@ public class MapStreamExample {
 		System.out.println(arr);
 		
 		
+		List<Integer> sal = Arrays.asList(3000,4000,3000,2500,2000);
+		int sumSal= arr.stream().reduce(0,(count,i) -> count+i);
+		
+		System.out.println(sumSal/sal.size());
 		
 		
 	}

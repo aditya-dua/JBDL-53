@@ -10,6 +10,7 @@ public class SingleInheritanceMain {
 		emp.display();
 		
 		FullTimeEmployee fte = new FullTimeEmployee();
+		
 		fte.display();
 		
 		//FullTimeEmployee fte2 = new Employee();

@@ -9,7 +9,8 @@ public class Chat {
 			
 			try {
 				//System.out.println("Question Wait");
-				wait();
+				//wait();
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -26,7 +27,8 @@ public class Chat {
 			
 			try {
 				//System.out.println("Answer Wait");
-				wait();
+				//wait();
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
