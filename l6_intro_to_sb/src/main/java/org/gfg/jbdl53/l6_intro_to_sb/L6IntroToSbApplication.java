@@ -2,6 +2,8 @@ package org.gfg.jbdl53.l6_intro_to_sb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Profile;
+
 
 @SpringBootApplication
 public class L6IntroToSbApplication {
