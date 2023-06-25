@@ -6,6 +6,7 @@ public class CreateEmployeeRequest {
 	public String name;
 	public int sal;
 	public String departmentName;
+	
 	public int getId() {
 		return id;
 	}

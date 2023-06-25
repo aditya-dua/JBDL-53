@@ -1,14 +1,26 @@
 package l7_springboot_curd_example.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@Builder
 public class Employee {
 
 	public int id;
 	public String name;
 	public int sal;
 	public String dept;
-
 	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Employee(int id, String name, int sal, String dept) {
 		super();
 		this.id = id;
@@ -17,16 +29,7 @@ public class Employee {
 		this.dept = dept;
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + ", dept=" + dept + "]";
-	}
 
-	// It has to do with the Spring
-	public Employee() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 	
 	
 }

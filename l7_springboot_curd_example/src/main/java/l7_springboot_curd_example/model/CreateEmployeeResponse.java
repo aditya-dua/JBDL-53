@@ -1,16 +1,8 @@
 package l7_springboot_curd_example.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @ToString
 @Data
 public class CreateEmployeeResponse {
@@ -19,6 +11,7 @@ public class CreateEmployeeResponse {
 	private String name;
 	private int sal;
 	private String departmentName;
+	
 	public CreateEmployeeResponse(int id, String name, int sal, String departmentName) {
 		super();
 		this.id = id;

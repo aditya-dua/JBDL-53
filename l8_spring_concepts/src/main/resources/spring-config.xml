@@ -1,0 +1,35 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<bean id="greetings" class="l8_spring_concepts.Greeting"> 
+		<property name="hw" ref="helloWorld"></property>
+	</bean>
+	
+	
+	
+	
+	<bean id="helloWorld" class="l8_spring_concepts.HelloWorld" scope="prototype" autowire="default">
+		<property name="message" value="Hello World"></property>
+	</bean>
+	<bean id="helloWorldSingleton" class="l8_spring_concepts.HelloWorld" init-method="init"> </bean>
+	
+	<bean id="greetingsCI" class="l8_spring_concepts.Greeting"> 
+		<constructor-arg ref="helloWorldSingleton"></constructor-arg>
+	</bean>
+	<bean id="greetingsCI2" class="l8_spring_concepts.Greeting"> 
+		<constructor-arg ref="helloWorldSingleton"></constructor-arg>
+		<constructor-arg ref="helloWorldSingleton"></constructor-arg>
+	</bean>
+	<bean id="greetingCIPrim" class="l8_spring_concepts.Greeting"> 
+		<constructor-arg type ="int" value="100"></constructor-arg>
+		<constructor-arg type ="java.lang.String" value="Aditya Dua"></constructor-arg>
+	</bean>
+	
+	<bean id="greetingCIIndex" class="l8_spring_concepts.Greeting"> 
+		<constructor-arg index="0"  value="100"></constructor-arg>
+		<constructor-arg index="1" value="Aditya Dua"></constructor-arg>
+	</bean>
+	
+</beans>

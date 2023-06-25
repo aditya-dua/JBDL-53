@@ -22,7 +22,7 @@ public class CURDController {
 	
 	@GetMapping("/load")
 	public String loadNames() {
-		nameList = new ArrayList<>();
+		//nameList = new ArrayList<>();
 		nameList.add("David");
 		nameList.add("John");
 		nameList.add("Ron");
