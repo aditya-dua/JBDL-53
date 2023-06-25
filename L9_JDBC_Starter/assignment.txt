@@ -1,0 +1,12 @@
+Question:
+You have API for Customer Management System.
+
+API:
+1. Get All Customers
+2. Get Customers based on Id
+3. Update Customer
+4. Insert New Customer
+5. Delete a Customer
+
+The above task has to be done using JDBC with Spring boot.
+You can choose a database of your choice
