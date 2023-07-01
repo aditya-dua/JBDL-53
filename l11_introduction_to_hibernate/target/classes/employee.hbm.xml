@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name = "l11_introduction_to_hibernate.Employee" table ="employee-hw">
+	
+		<id name = "id" type ="int" column = "id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column = "name" type ="string"></property>
+		<property name="salary" column = "salary" type ="int"></property>
+		
+	
+	</class>
+
+</hibernate-mapping>

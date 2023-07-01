@@ -11,13 +11,15 @@ public class HibernateHelloWorld {
 
 		Configuration c = new Configuration();
 		
-		SessionFactory sf = c.configure("hbm-postgres.cfg.xml").buildSessionFactory();
+		SessionFactory sf = c.configure("hbm.cfg.xml").buildSessionFactory();
 		
 		System.out.println(sf);
 		
 		Session session = sf.openSession();
 		System.out.println("Session started"+session);
 		
+		Employee e = new Employee(1, "John", 2000);
+		session.save(e);
 		session.close();
 		
 	}
