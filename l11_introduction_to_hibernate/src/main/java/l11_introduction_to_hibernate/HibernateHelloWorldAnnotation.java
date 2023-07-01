@@ -2,6 +2,7 @@ package l11_introduction_to_hibernate;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class HibernateHelloWorldAnnotation {
@@ -17,11 +18,17 @@ public class HibernateHelloWorldAnnotation {
 		
 		Session session = sf.openSession();
 		System.out.println("Session started"+session);
+		Transaction tx = session.beginTransaction();
 		
 		EmployeeAnnotation e = new EmployeeAnnotation(0, "John", 2000);
 		
 		
 		session.save(e);
+		session.flush();
+		
+		tx.commit();
+		
+		
 		
 		session.close();
 		
