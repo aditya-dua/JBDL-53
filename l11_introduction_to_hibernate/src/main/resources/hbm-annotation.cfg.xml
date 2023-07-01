@@ -12,8 +12,7 @@
 		<property name="hibernate.show_sql">true</property>
 		<property name="hbm2ddl.auto">create-drop</property>
 		
-		<mapping resource="employee.hbm.xml"/>
-		
+		<mapping class="l11_introduction_to_hibernate.EmployeeAnnotation"/>
 	
 	</session-factory>
 </hibernate-configuration>

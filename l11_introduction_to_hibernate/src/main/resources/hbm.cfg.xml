@@ -13,6 +13,7 @@
 		<property name="hbm2ddl.auto">create-drop</property>
 		
 		<mapping resource="employee.hbm.xml"/>
+		
 	
 	</session-factory>
 </hibernate-configuration>
