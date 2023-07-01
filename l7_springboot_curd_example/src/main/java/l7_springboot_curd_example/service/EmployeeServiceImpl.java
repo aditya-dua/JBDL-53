@@ -15,6 +15,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	HashMap<Integer, Employee> empHM = new HashMap<>();
 	Employee emp;
+	DBConnection con;
+	
 	
 	
 	public CreateEmployeeResponse createEmployee(CreateEmployeeRequest empRequest) {

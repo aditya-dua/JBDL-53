@@ -10,7 +10,7 @@
 		<property name="hibernate.connection.username">root</property>
 		<property name="hibernate.connection.password">password</property>
 		<property name="hibernate.show_sql">true</property>
-		<property name="hbm2ddl.auto">create-drop</property>
+		<property name="hbm2ddl.auto">validate</property>
 		
 		<mapping class="l11_introduction_to_hibernate.EmployeeAnnotation"/>
 	

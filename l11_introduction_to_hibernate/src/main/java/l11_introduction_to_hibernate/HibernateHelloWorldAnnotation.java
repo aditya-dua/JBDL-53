@@ -1,5 +1,8 @@
 package l11_introduction_to_hibernate;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -28,7 +31,32 @@ public class HibernateHelloWorldAnnotation {
 		
 		tx.commit();
 		
+		Transaction tx1 = session.beginTransaction();
 		
+		List<EmployeeAnnotation> employees = session.createQuery("from EmployeeAnnotation").list();
+		
+		for (EmployeeAnnotation object : employees) {
+			
+			System.out.println(object);
+			
+		}
+		
+		tx1.commit();
+		
+		EmployeeAnnotation empExample = (EmployeeAnnotation) session.get(EmployeeAnnotation.class, 52);
+		System.out.println(empExample);
+		
+		empExample.setName("Updated Name");
+		
+		session.update(empExample);
+		empExample = (EmployeeAnnotation) session.get(EmployeeAnnotation.class, 52);
+		System.out.println(empExample);
+		
+		Transaction tx2 = session.beginTransaction();
+		
+		session.delete(empExample);
+		
+		tx2.commit();
 		
 		session.close();
 		
