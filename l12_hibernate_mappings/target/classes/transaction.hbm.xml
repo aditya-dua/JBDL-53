@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name = "l12_hibernate_mappings.one2one.CustomerTransaction" table ="transaction-O2O">
+	
+		<id name = "id" type ="int" column = "id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="total" column = "total" type ="double"></property>
+		
+		<one-to-one name="customer" class="l12_hibernate_mappings.one2one.Customer"
+			cascade="save-update"></one-to-one>
+		
+	</class>
+
+</hibernate-mapping>
