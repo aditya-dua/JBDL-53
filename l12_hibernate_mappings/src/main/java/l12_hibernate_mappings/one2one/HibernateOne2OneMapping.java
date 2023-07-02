@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+// https://github.com/tusharAgarwal2511/hibernate_oneToOne
+
 public class HibernateOne2OneMapping {
 
 	
