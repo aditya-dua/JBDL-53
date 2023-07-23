@@ -1,0 +1,5 @@
+Youtube...cache only the shorts where the view is >1M in 1 hour.
+
+Caching...We are doing on the app..
+
+Cache
