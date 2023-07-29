@@ -6,11 +6,20 @@ public class JunitHelloWorld {
 	
 	Calc c;
 	
+	
+	@BeforeClass
+	public static void setupBefore() {
+		
+		System.out.println("@BeforeClass Called");
+	}
+	
 	@Before
 	public void setup() {
+		// you can pull out value of the object.
 		c = new Calc();
 		System.out.println("Before Called");
 	}
+	
 	
 	@Test
 	public void messgae() {
