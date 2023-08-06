@@ -18,7 +18,9 @@ public class FileController {
 	@GetMapping("/download")
 	public ResponseEntity<Object> downloadFile() throws IOException{
 		
-		String fileName = "/Users/adityadua/Downloads/ProjectDocumentation.pdf";
+		//String fileName = "/Users/adityadua/Downloads/ProjectDocumentation.pdf";
+		//String fileName = "/Users/adityadua/Documents/images.jpeg";
+		String fileName = "/Users/adityadua/Downloads/CRMTiger20230805.csv";
 		ResponseEntity<Object> responseEntity;
 		
 		File file = new File(fileName);
@@ -33,7 +35,7 @@ public class FileController {
 	    headers.add("Expires", "0");
 	    
 	    if(true) {
-	    	responseEntity = ResponseEntity.ok().contentLength(file.length()).contentType(MediaType.parseMediaType("application/pdf")).body(resource);
+	    	responseEntity = ResponseEntity.ok().contentLength(file.length()).contentType(MediaType.parseMediaType("text/plain")).body(resource);
 	    }else {
 	    	
 	    }
