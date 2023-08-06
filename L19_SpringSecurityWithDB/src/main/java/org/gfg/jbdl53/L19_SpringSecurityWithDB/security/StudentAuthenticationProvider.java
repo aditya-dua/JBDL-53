@@ -32,12 +32,15 @@ public class StudentAuthenticationProvider implements AuthenticationProvider {
 		String username = authentication.getName();
 		String password = authentication.getCredentials().toString();
 		
+		System.out.println("In Auth");
 		Student student  = repository.findByUsername(username);
 		if(student == null) {
+			
 			throw new BadCredentialsException("Details Not Found");
 		}
 		
 		if(encoder.matches(password, student.getPassword())) {
+			System.out.println("Auth Success");
 			return new UsernamePasswordAuthenticationToken(username, password,getStudentRole(student.getRole()));
 		}else {
 			throw new BadCredentialsException("Details Not Found");

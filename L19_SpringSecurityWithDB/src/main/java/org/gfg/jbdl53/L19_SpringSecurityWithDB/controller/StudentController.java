@@ -31,11 +31,11 @@ public class StudentController {
 	@GetMapping("/get")
 	public Student getStudent(@RequestParam("username") String username) {
 		
-		System.out.println("In getStuent");
+		System.out.println("In get");
 		return service.getDetails(username);
 	}
 	
-	@GetMapping("/getStuentRoles")
+	@GetMapping("/getRole")
 	public String getStudentRoles(@RequestParam("username") String username) {
 		
 		

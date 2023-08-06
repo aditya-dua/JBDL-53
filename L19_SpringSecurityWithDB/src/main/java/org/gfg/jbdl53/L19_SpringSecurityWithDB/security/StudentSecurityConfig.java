@@ -22,19 +22,30 @@ public class StudentSecurityConfig {
 	
 	@Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+		
 		http.csrf().disable();
+		
+		http.authorizeRequests()
+        .requestMatchers("/*")
+        .permitAll()
+        
+        .and()
+        .httpBasic();
+		/*
 		http.authorizeRequests()
         .requestMatchers("/get")
-        .authenticated()
+        .permitAll()
         .requestMatchers("/register")
         .permitAll()
         .requestMatchers("/test")
         .permitAll()
-        .requestMatchers("/getStuentRoles")
+        .requestMatchers("/getRole")
         .hasAuthority("ROLE_WRITE")
         .and()
         .httpBasic();
-        return http.build();
+        
+        */
+		return http.build();
     }
 	
 
